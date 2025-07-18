@@ -1,0 +1,38 @@
+{
+  "name": "talentotech-proyectofinal-nodejs",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso NodeJS de Talento Tech",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoNZ12/TalentoTech-ProyectoFinal-Nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "rest",
+    "express",
+    "firebase"
+  ],
+  "author": "Nicolás Núñez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoNZ12/TalentoTech-ProyectoFinal-Nodejs/issues"
+  },
+  "homepage": "https://github.com/NicoNZ12/TalentoTech-ProyectoFinal-Nodejs#readme",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "17.2.0",
+    "express": "5.1.0",
+    "firebase": "12.0.0",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
