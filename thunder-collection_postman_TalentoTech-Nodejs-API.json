@@ -1,0 +1,223 @@
+{
+    "info": {
+        "_postman_id": "76e215db-8d68-4cf4-91f8-18c0bf63cf49",
+        "name": "TalentoTech-Nodejs-API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "products",
+            "item": [
+                {
+                    "name": "products",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/products",
+                            "path": [
+                                "api",
+                                "products"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "one product",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/api/products/QviORvSy1zFo7dsHCyca",
+                            "path": [
+                                "api",
+                                "products",
+                                "QviORvSy1zFo7dsHCyca"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "create product",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/products/create",
+                            "path": [
+                                "api",
+                                "products",
+                                "create"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\r\n    \"nombre\": \"aceite\",\r\n    \"precio\": 2300,\r\n    \"cantidad\": 2\r\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilk4S2NSZ0FSVWNVNGxlMWYxZ3FjIiwidXNlcm5hbWUiOiJwcnVlYmEiLCJlbWFpbCI6InBydWViYUBnbWFpbC5jb20iLCJpYXQiOjE3NTI5MzQ5NzQsImV4cCI6MTc1MjkzODU3NH0.6tq5xycIuLlrG4yTVqB626jiZKcNSyNbz4K8ut21AjY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete product",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/api/products/QviORvSy1zFo7dsHCyca",
+                            "path": [
+                                "api",
+                                "products",
+                                "QviORvSy1zFo7dsHCyca"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilk4S2NSZ0FSVWNVNGxlMWYxZ3FjIiwidXNlcm5hbWUiOiJwcnVlYmEiLCJlbWFpbCI6InBydWViYUBnbWFpbC5jb20iLCJpYXQiOjE3NTI5MzQ5NzQsImV4cCI6MTc1MjkzODU3NH0.6tq5xycIuLlrG4yTVqB626jiZKcNSyNbz4K8ut21AjY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update product",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:3000/api/products/UKKB6O4180feqcSBUxjM",
+                            "path": [
+                                "api",
+                                "products",
+                                "UKKB6O4180feqcSBUxjM"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"nombre\": \"Coca Cola Zero\",\n  \"precio\": 3000,\n  \"cantidad\": 1\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilk4S2NSZ0FSVWNVNGxlMWYxZ3FjIiwidXNlcm5hbWUiOiJwcnVlYmEiLCJlbWFpbCI6InBydWViYUBnbWFpbC5jb20iLCJpYXQiOjE3NTI5MzQ5NzQsImV4cCI6MTc1MjkzODU3NH0.6tq5xycIuLlrG4yTVqB626jiZKcNSyNbz4K8ut21AjY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "users",
+            "item": [
+                {
+                    "name": "create user",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/users/create",
+                            "path": [
+                                "api",
+                                "users",
+                                "create"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"username\": \"prueba\",\n  \"email\": \"prueba@gmail.com\",\n  \"password\": \"prueba123\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "login",
+            "item": [
+                {
+                    "name": "login",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/api/auth/login",
+                            "path": [
+                                "api",
+                                "auth",
+                                "login"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\": \"prueba@gmail.com\",\n  \"password\": \"prueba123\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
