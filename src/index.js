@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
-// import loginRoutes from './routes/login.route.js'
+import loginRoutes from './routes/login.route.js'
 import userRoutes from './routes/users.route.js'
 import productRoutes from './routes/products.route.js'
 
@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productRoutes)
 app.use("/api/users", userRoutes)
-// app.use("/api/auth/", loginRoutes)
+app.use("/api/auth/", loginRoutes)
 
 app.use((req, res, next) => {
     res.status(404).json({ message: "Not Found" })
